@@ -1,7 +1,7 @@
 import { showSystemInfo } from './systemInfo.js';
 import { parseUrl } from './urlParser.js';
 import { generateHash } from './passwordHasher.js';
-import { eventHandler } from './eventHandler.js';
+import { eventEmitter } from './eventHandler.js';
 
 import readline from 'readline';
 
@@ -78,6 +78,6 @@ process.on('exit', () => {
     console.log('\nProces Node.js został zakończony.');
 });
 
-consloe.log('Argumenty programu:', process.argv);
+console.log('Argumenty programu:', process.argv);
 
 askUser();
